@@ -41,7 +41,7 @@ public class VendedorControllerTest {
 
         when(vendedorService.createVendedor(any(VendedorEntity.class))).thenReturn(vendedorEntity);
 
-        mockMvc.perform(MockMvcRequestBuilders.post("/api/vendedores")
+        mockMvc.perform(MockMvcRequestBuilders.patch("/api/vendedores")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content("{ \"nome\": \"Maria\" }"))
                 .andExpect(MockMvcResultMatchers.status().isOk())

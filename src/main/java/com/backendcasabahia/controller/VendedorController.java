@@ -42,7 +42,7 @@ public class VendedorController {
             @ApiResponse(responseCode = "400", description = "Requisição inválida"),
             @ApiResponse(responseCode = "500", description = "Erro interno no servidor")
     })
-    @PostMapping
+    @PatchMapping
     public ResponseEntity<VendedorEntity> createVendedor(@RequestBody VendedorEntity vendedorEntity) {
         VendedorEntity createdVendedorEntity = vendedorService.createVendedor(vendedorEntity);
         return ResponseEntity.ok(createdVendedorEntity);
