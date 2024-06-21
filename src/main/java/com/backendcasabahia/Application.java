@@ -8,7 +8,7 @@ import org.springframework.cache.annotation.EnableCaching;
 
 @SpringBootApplication
 @EnableCaching
-@OpenAPIDefinition(info = @Info( title = "Backend Casa Bahia", version = "1.0", description = "Description documents"))
+@OpenAPIDefinition(info = @Info( title = "Backend Casa Bahia", version = "1.0", description = "Description something"))
 public class Application {
 
     public static void main(String[] args) {
